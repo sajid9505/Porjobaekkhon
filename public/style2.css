@@ -1,0 +1,288 @@
+.mediaViewInfo {
+    --web-view-name: Login;
+    --web-view-id: Login;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: Login;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+#Login {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    --web-view-name: Login;
+    --web-view-id: Login;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+#Group_3 {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+.Path_7_p {
+    overflow: visible;
+    position: auto;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Group_49 {
+    position: absolute;
+    width: 497.132px;
+    height: 577.953px;
+    left: 711px;
+    top: 250.95px;
+    overflow: visible;
+}
+.Path_1 {
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.161));
+    overflow: visible;
+    position: absolute;
+    width: 527.132px;
+    height: 607.953px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+.Path_2 {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    overflow: visible;
+    position: absolute;
+    width: 188.072px;
+    height: 70.33px;
+    left: 287.813px;
+    top: 479.473px;
+    transform: matrix(1,0,0,1,0,0);
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Dashboard.html;
+    cursor: pointer;
+}
+#Log_in {
+    position: absolute;
+    left: 344px;
+    top: 493.05px;
+    overflow: visible;
+    width: 59px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 21px;
+    color: rgba(255,255,255,1);
+}
+#Welcome_back_ {
+    position: absolute;
+    left: 126px;
+    top: 112.05px;
+    overflow: visible;
+    width: 225px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31px;
+    color: rgba(95,103,114,1);
+}
+#Rectangle_1 {
+    opacity: 0.3;
+}
+.Rectangle_1 {
+    position: absolute;
+    overflow: visible;
+    width: 419px;
+    height: 53px;
+    left: 39px;
+    top: 196.05px;
+}
+#Rectangle_2 {
+    opacity: 0.3;
+}
+.Rectangle_2 {
+    position: absolute;
+    overflow: visible;
+    width: 419px;
+    height: 52px;
+    left: 39px;
+    top: 275.05px;
+}
+#Log_in_x {
+    opacity: 0.75;
+    position: absolute;
+    left: 39px;
+    top: 31.05px;
+    overflow: visible;
+    width: 60px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    color: rgba(95,103,114,1);
+}
+.Rectangle_3 {
+    position: absolute;
+    overflow: visible;
+    width: 497px;
+    height: 3px;
+    left: 0px;
+    top: 78.05px;
+}
+.Path_3 {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    overflow: visible;
+    position: absolute;
+    width: 189.072px;
+    height: 71.33px;
+    left: 39.247px;
+    top: 479.473px;
+    transform: matrix(1,0,0,1,0,0);
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Sign_up.html;
+    cursor: pointer;
+}
+#Sign_up {
+    position: absolute;
+    left: 88.306px;
+    top: 492.555px;
+    overflow: visible;
+    width: 70px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 20px;
+    color: rgba(74,108,128,1);
+}
+#Forgot_your_password__Click_he {
+    opacity: 0.8;
+    position: absolute;
+    left: 128px;
+    top: 426.05px;
+    overflow: visible;
+    width: 231px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(95,103,114,1);
+}
+#Username {
+    opacity: 0.7;
+    position: absolute;
+    left: 76px;
+    top: 207.05px;
+    overflow: visible;
+    width: 94px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 20px;
+    color: rgba(74,108,128,1);
+}
+#Password {
+    opacity: 0.7;
+    position: absolute;
+    left: 76px;
+    top: 287.05px;
+    overflow: visible;
+    width: 95px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 21px;
+    color: rgba(74,108,128,1);
+}
+#Rectangle_421 {
+    opacity: 0.3;
+}
+.Rectangle_421 {
+    position: absolute;
+    overflow: visible;
+    width: 419px;
+    height: 52px;
+    left: 40px;
+    top: 358.05px;
+}
+#User_Type {
+    opacity: 0.7;
+    position: absolute;
+    left: 77px;
+    top: 370.05px;
+    overflow: visible;
+    width: 96px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 21px;
+    color: rgba(74,108,128,1);
+}
+#Symbol_6___2 {
+    opacity: 0.7;
+    transform: translate(-711px, -297.95px) matrix(1,0,0,1,1139.0355,677.1998) rotate(225deg);
+    transform-origin: center;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Login___1.html;
+    cursor: pointer;
+}
+.Rectangle_42 {
+    position: absolute;
+    overflow: visible;
+    width: 6.364px;
+    height: 6.364px;
+    left: 0px;
+    top: 4.95px;
+}
+.Rectangle_43 {
+    position: absolute;
+    overflow: visible;
+    width: 6.364px;
+    height: 6.364px;
+    left: 4.95px;
+    top: 4.95px;
+}

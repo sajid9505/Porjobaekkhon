@@ -1,0 +1,23 @@
+{
+  "name": "porjobaekkhon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sajid9505/Porjobaekkhon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sajid9505/Porjobaekkhon/issues"
+  },
+  "homepage": "https://github.com/sajid9505/Porjobaekkhon#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
