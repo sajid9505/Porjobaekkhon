@@ -30,7 +30,7 @@
                         <div class="card">
                             <div class="card-header">Register</div>
                             <div class="card-body">
-                                <form name="my-form" onsubmit="return validform()" action="success.php" method="">
+                                <!-- <form name="my-form" onsubmit="return validform()" action="success.php" method=""> -->
                                     <div class="form-group row">
                                         <label for="first_name" class="col-md-4 col-form-label text-md-right">First Name</label>
                                         <div class="col-md-6">
@@ -67,16 +67,27 @@
                                         </div>
                                     </div>
 
+                                    <form action="/uploadProfilePicture" 
+                                    enctype="multipart/form-data" method="POST"> 
+
                                     <div class="form-group row">
-                                        <label for="confirm_password" class="col-md-4 col-form-label text-md-right">Upload AutoCad File</label>
+                                     
+                                        <label for= "upload"  class="col-md-4 col-form-label text-md-right">Upload AutoCad File:</label>   
+                                          <div class="col-md-6">
+                                            <input type="file" name="mypic" required/> <br> 
+                                            <input type="submit" value="submit">                                              
+                                        </div>
+                                          
+                                      </form> 
+                                        <!-- <label for="confirm_password" class="col-md-4 col-form-label text-md-right">Upload AutoCad File</label>
                                         <div class="col-md-6">
                                             <input type="text" id="permanent_address" class="form-control" name="permanent-address">
-                                        </div>
+                                        </div> -->
                                     </div>
     
                                        
                                         <div class="col-md-6 offset-md-4">
-                                            <button type="submit" class="btn btn-primary">
+                                            <button type="submit" value= "submit" class="btn btn-primary">
                                             Register
                                             </button>
                                         </div> 

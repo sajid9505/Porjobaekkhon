@@ -18,6 +18,7 @@
   "homepage": "https://github.com/sajid9505/Porjobaekkhon#readme",
   "dependencies": {
     "ejs": "^3.0.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
   }
 }
