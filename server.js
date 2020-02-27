@@ -16,6 +16,9 @@ app.get('/signup',function(request,response){
     response.sendFile(__dirname + '/views/Signup.html')
 })
 
+app.get('/dashboard',function(request,response){
+    response.sendFile(__dirname + '/views/dashboard.html')
+})
 
 server.listen(3000,'localhost',function(){
     console.log('server running ...')
