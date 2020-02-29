@@ -4,7 +4,23 @@ var app = express();
 var server= http.Server(app);
 const CURRENT_WORKING_DIR = process.cwd()
 var path = require('path');
+var bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({extended:true}))
 const multer = require("multer") 
+
+var mongo = require('mongodb')
+var mongoose = require('mongoose')
+var db, uri = "mongodb+srv://sajid9505:mongoDB1234@cluster0-ebrcf.mongodb.net/Porjobaekkhon?retryWrites=true&w=majority"
+mongoose.connect(uri, 
+    {useNewUrlParser:true, useUnifiedTopology: true })
+    mongoose.connection.on('connected', function(){
+          console.log("connected")
+    });
+mongoose.connection.on('error', function(err){
+    console.log('Could not connect to MongoDB')
+})
+
+
 
 // View Engine Setup 
 app.set("views",path.join(__dirname,"views")) 
@@ -85,12 +101,12 @@ app.get('/',function(request,response){
     response.sendFile(__dirname + '/views/login.html')
 })
 
-// app.get('/signup',function(request,response){
-//     response.sendFile(__dirname + '/views/Signup.html')
-// })
+app.get('/signup',function(request,response){
+    response.sendFile(__dirname + '/views/Signup.html')
+})
 
-app.get("/signup",function(req,res){ 
-    res.render("Signup"); 
+app.get("/projectsub",function(req,res){ 
+    res.render("projectsub"); 
 }) 
 
 app.get('/dashboard',function(request,response){

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign up</title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/public/signup.css" type="text/css">
+
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+
+
+
+    <link rel="icon" href="Favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+</head>
+<body>
+    
+    <main class="my-form">
+        <div class="cotainer">
+            <div class="row justify-content-center">
+                <div class="col-md-8" style="margin: 50px auto;">
+                        <div class="card">
+                            <div class="card-header">Register</div>
+                            <div class="card-body">
+                                <!-- <form name="my-form" onsubmit="return validform()" action="success.php" method=""> -->
+                                    <div class="form-group row">
+                                        <label for="first_name" class="col-md-4 col-form-label text-md-right">First Name</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="first_name" class="form-control" name="first-name">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="last_name" class="col-md-4 col-form-label text-md-right">Last Name</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="last_name" class="form-control" name="last-name">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="last_name" class="col-md-4 col-form-label text-md-right">User Name</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="user_name" class="form-control" name="last-name">
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-group row">
+                                        <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="email_address" class="form-control" name="email-address">
+                                        </div>
+                                    </div>
+    
+                                       
+                                    <div class="form-group row">
+                                        <label for="Password" type= "password" class="col-md-4 col-form-label text-md-right">Password</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="password" class="form-control">
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-group row">
+                                        <label for="confirm_password" class="col-md-4 col-form-label text-md-right">Confirm Password</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="confirm_password" class="form-control" name="permanent-address">
+                                        </div>
+                                    </div>
+
+                                    <!-- <form action="/uploadProfilePicture" 
+                                    enctype="multipart/form-data" method="POST"> 
+
+                                    <div class="form-group row">
+                                     
+                                        <label for= "upload"  class="col-md-4 col-form-label text-md-right">Upload AutoCad File:</label>   
+                                          <div class="col-md-6">
+                                            <input type="file" name="mypic" required/> <br> 
+                                            <input type="submit" value="submit">                                              
+                                        </div>
+                                          
+                                      </form>  -->
+                                        <!-- <label for="confirm_password" class="col-md-4 col-form-label text-md-right">Upload AutoCad File</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="permanent_address" class="form-control" name="permanent-address">
+                                        </div> -->
+                                    </div>
+    
+                                       
+                                        <div class="col-md-6 offset-md-4">
+                                            <button type="submit"  class="btn btn-primary btn-add-new-user">Register</button>
+                                        </div> 
+                                        
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    
+
+    <script>
+        $('.btn-add-new-user').click(function(){
+            //   let type = $('.input-type').val()
+            //  console.log($.type('1'))
+          var user = {first_name:'', last_name:'', user_name:'', email:'', password:'', confirm_password:''}
+          user.first_name = $('#first_name').val()
+          user.last_name = $('#last_name').val()
+          user.user_name = $('#user_name').val()
+          user.password = $('#password').val()
+          user.email= $('#email_address').val()            
+               console.log(user)
+            $.ajax({
+                method: "POST",
+                url: '/new_user',
+                data: user
+            }).done(function(response){
+                console.log("Posted")
+            }).fail(function(response){
+                console.log(response)
+            })
+        })
+        </script>
+
+
+</body>
+</html>                                		                            
